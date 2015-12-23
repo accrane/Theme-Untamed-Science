@@ -1713,12 +1713,9 @@ p.comment-form-comment {
 	################################################################################################
 	*/
 	.blog-square {
-		width: 335px;
+		width: 45%;
 		float:left;
 		margin-bottom: 40px;
-	}
-	.blog-featured-image{
-		width: 335px;
 	}
 	/**
 	 * 5.8 Author Bio
@@ -1874,13 +1871,5 @@ p.comment-form-comment {
 
 	################################################################################################
 	*/
-	.blog-square {
-		width: 335px;
-		float:left;
-		margin-bottom: 40px;
-	}
-
-	.blog-featured-image{
-		width: 335px;
-	}
+	.blog-square {width: 335px;}
 }
