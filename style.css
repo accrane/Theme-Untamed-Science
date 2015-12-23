@@ -1208,7 +1208,6 @@ padding: 10px;
 	padding-top: 5px;
 }
 #footer {
-	
 	background-color: #0A0A0A;
 	padding: 20px;
 	color: #999;
@@ -1222,9 +1221,19 @@ padding: 10px;
 #footer a:hover {
 	color: #D56431;
 }
+#footer h3 {
+	width: 100%;
+	margin: 0px 0 20px 0;
+	overflow: hidden;
+}
+.footer-form {
+	width: auto;
+	display: inline-block;
+}
 .footer-left, .footer-mid-left, .footer-mid-right, .footer-right {
 	width: 100%;
 	text-align: center;
+	margin: 10px auto;
 }
 #footer ul {
 	
@@ -1684,15 +1693,19 @@ p.comment-form-comment {
 		float: left;
 		position: relative;
 	}
+	#footer h3 {
+		width: 100%;
+		margin: 0px 0 10px 0;
+		overflow: hidden;
+	}
 	.footer-left, .footer-mid-left, .footer-mid-right, .footer-right {
+		width: 24%;
 		float: left;
 		text-align: left;
+		margin: 0;
 	}
-	.footer-left {width: 170px;}
-	.footer-mid-left {width: 300px;}
-	.footer-mid-right {width: 300px;}
-	.footer-right {width: 175px;}
 	
+
 	/*  ################################################################################################
 
 			The Blog
