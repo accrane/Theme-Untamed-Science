@@ -1,0 +1,81 @@
+/* FlexSlider Necessary Styles
+*********************************/ 
+#flexslider {
+    width: 100%;
+    height: 185px;
+    padding: 0px 0px 0px 0px;
+    overflow: visible;
+}
+.flexslider {width: 100%; height: 185px; margin: 0; padding: 0;}
+.flexslider .slides li {
+    display: none;
+    list-style-type: none;
+} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {max-width: 100%; display: block;}
+
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider { position: relative; /*-webkit-border-radius: 5px; -moz-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px;*/}
+.flexslider .slides  li {position: relative;list-style-type: none;}
+/* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
+.flexslider-container {position: relative;}
+
+
+/* Caption style */
+.flex-caption {
+    width: 96%;
+    padding: 2%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.3);
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+    font-size: 15px;
+    line-height: 18px;
+}
+.flex-caption a{
+    text-decoration: none;
+}
+p.flex-caption a{
+    text-decoration: none;
+}
+
+/* Direction Nav */
+.flex-direction-nav {list-style-type: none;}
+.flex-direction-nav li a {
+    width: 50px;
+    height: 180px;
+    display: block;
+    /*background: url(images/bg_direction_nav.png) no-repeat 0 0;*/
+    /*background-color:#339966;*/
+    position: absolute;
+    cursor: pointer;
+    text-indent: -9999px;
+    list-style-type: none;
+    top: 0px;
+} /* set negative margin-top equal to half the height on the directional-nav for perfect vertical centering */
+.flex-direction-nav li a.flex-next {
+    background-position: -50px 0;
+    list-style-type: none;
+    right: -50px;
+}
+.flex-direction-nav li a.flex-prev {
+    background-position: 0 0;
+    left: -50px;
+}
+
+/* Control Nav */
+.flex-control-nav {
+    float: right;
+    position: relative;
+    margin-bottom: -20px;
+    margin-right:40px;
+    
+} /* set negative margin-left equal to half the width on the control-nav for perfect centering */
+.flex-control-nav li {margin: 0 0 0 5px; float: left;list-style-type: none;}
+.flex-control-nav li:first-child {margin: 0;list-style-type: none;}
+.flex-control-nav li a {width: 15px; height: 15px; display: block; background: url(../images/bg_control_nav.png) no-repeat 0 0; cursor: pointer; text-indent: -9999px;}
+.flex-control-nav li a:hover {background-position: 0 -15px;}
+.flex-control-nav li a.active {background-position: 0 -30px; cursor: default;}
