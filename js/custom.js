@@ -294,10 +294,10 @@ $(function() {
 			
 			$('.blog-square').mouseenter(function() {
 			/*$('.blog-featured-image').animate({opacity: .5});*/
-			$(this).children('.blog-featured-image').stop(false,true).animate({marginTop: -5}, "fast");
+				$(this).animate({marginTop: -5}, "fast");
 			});
 			$('.blog-square').mouseleave(function() {
-			$(this).children('.blog-featured-image').stop(false,true).animate({marginTop: 0}, "fast");
+				$(this).animate({marginTop: 0}, "fast");
 			});
 			
 			
