@@ -50,11 +50,9 @@
     
 }
 #f-soc {
-    position: relative;
-    float: left;
-    margin-left: 5px;
-    margin-top: 5px;
-    margin-bottom:30px;
+    width: auto;
+    display: inline-block;
+    margin: 10px auto;
 }
 #f-soc ul {
     margin: 0px;
@@ -110,4 +108,14 @@
 }
 #f-soc  .f-youtube a:hover {
     background-position: -99px -33px;
+}
+@media screen and (min-width: 600px) {
+    #f-soc {
+        position: relative;
+        float: left;
+        margin: 5px 0 30px 5px;
+    }
+}
+@media screen and (min-width: 1100px) {
+
 }
