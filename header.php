@@ -102,16 +102,22 @@
     
 </div><!-- #header -->
 
-<div id="main" class="wrapper">
-
-  <div class="bread">
-  <?php 
+<?php 
     if(!is_front_page()) { 
-      if ( function_exists('yoast_breadcrumb') ) {
-        $breadcrumbs = yoast_breadcrumb( '<li>', '</li>', false );
-        echo str_replace( '|', ' </li><li>', $breadcrumbs );
-      } 
+      if ( function_exists('yoast_breadcrumb') ) { ?>
+      <div class="bread">
+          <div class="wrapper">
+            <?php $breadcrumbs = yoast_breadcrumb( '<li>', '</li>', false );
+            echo str_replace( '|', ' </li><li>', $breadcrumbs ); ?>
+          </div><!-- wrapper -->
+     </div><!-- bread -->
+     <?php } 
     } 
   ?>
-  </div><!-- bread -->
+
+<div id="main" class="wrapper">
+
+  
+
+  
     
