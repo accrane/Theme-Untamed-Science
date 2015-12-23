@@ -1222,9 +1222,9 @@ padding: 10px;
 #footer a:hover {
 	color: #D56431;
 }
-.footer-left {
-	width: 170px;
-	float:left;	
+.footer-left, .footer-mid-left, .footer-mid-right, .footer-right {
+	width: 100%;
+	text-align: center;
 }
 #footer ul {
 	
@@ -1241,18 +1241,6 @@ color: #fff;
 	color: #fff;
 	font-size: 12px;
 	margin-bottom: 10px;	
-}
-.footer-mid-left {
-	width: 300px;
-	float:left;	
-}
-.footer-mid-right {
-	width: 300px;
-	float:left;	
-}
-.footer-right {
-	width: 175px;
-	float:left;	
 }
 	
 /*  
@@ -1696,6 +1684,15 @@ p.comment-form-comment {
 		float: left;
 		position: relative;
 	}
+	.footer-left, .footer-mid-left, .footer-mid-right, .footer-right {
+		float: left;
+		text-align: left;
+	}
+	.footer-left {width: 170px;}
+	.footer-mid-left {width: 300px;}
+	.footer-mid-right {width: 300px;}
+	.footer-right {width: 175px;}
+	
 	/*  ################################################################################################
 
 			The Blog
@@ -1838,10 +1835,27 @@ p.comment-form-comment {
 		z-index: 6;	
 		display: block;
 	}
-	#footer {width: 1035px;}
 	.search-glass {
 		display: block;
 	}
+	#footer {width: 1035px;}
+	.footer-left {
+		width: 170px;
+		float:left;	
+	}
+	.footer-mid-left {
+		width: 300px;
+		float:left;	
+	}
+	.footer-mid-right {
+		width: 300px;
+		float:left;	
+	}
+	.footer-right {
+		width: 175px;
+		float:left;	
+	}
+	
 	/*  ################################################################################################
 
 			The Blog
