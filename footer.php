@@ -109,7 +109,7 @@
     <div class="footer-mid-left">
     <h3>Can't find what you were looking for?</h3>
 <form action="http://www.google.com" id="cse-search-box" target="_blank">
-  <div>
+  <div class="footer-form">
     <input type="hidden" name="cx" value="partner-pub-6981626318170748:9252974045" />
     <input type="hidden" name="ie" value="UTF-8" />
     <div class="forminput">
