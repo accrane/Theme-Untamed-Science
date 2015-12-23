@@ -1,3 +1,24 @@
+<?php 
+$queried_object = get_queried_object(); 
+$taxonomy = $queried_object->taxonomy;
+
+if( 'blog' == get_post_type() ) {
+	$tax = 'blogcats';
+} elseif( 'biodiversity' == get_post_type() ) {
+	$tax = 'biocats';
+} elseif( 'filmmaking' == get_post_type() ) {
+	$tax = 'filmmakingcats';
+} elseif( 'biology' == get_post_type() ) {
+	$tax = 'biocats';
+} else {
+	// got nuthin...
+	$tax = 'none';
+}
+
+
+?>
+
+
 <div class="blog-square item">
 
 	<div class="blog-square-readmore">
@@ -7,7 +28,7 @@
 
 	<div class="blog-square-category">
 		<?php 
-			$custom_tax = get_the_term_list( $post->ID, 'blogcats', '<li>', '', '</li>');
+			$custom_tax = get_the_term_list( $post->ID, $tax, '<li>', '', '</li>');
 			echo $custom_tax;
 		?>
 	</div><!-- blog square category -->
