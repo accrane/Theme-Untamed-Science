@@ -1,4 +1,4 @@
-<div id="mc_embed_signup">
+<div id="mc_embed_signup" class="footer-form">
 <form action="http://untamedscience.us3.list-manage.com/subscribe/post?u=944edd6c6b052b800d6f6e271&amp;id=846d4e8cdb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 	
 
