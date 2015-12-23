@@ -27,6 +27,16 @@
   <div id="main-nav-container">  
    <div class="wrapper">
 
+      <?php if(is_home()) { ?>
+            <h1 class="logo">
+            <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
+            </h1>
+        <?php } else { ?>
+            <div class="logo">
+            <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
+            </div>
+        <?php } ?>
+
         <div id="header-social">
               <ul>
               	<li class="facebook"><a href="https://www.facebook.com/pages/Untamed-Science/169220075768">Facebook</a></li>
@@ -42,52 +52,19 @@
                <a href="#">Search</a>
                 <ul>
                    <li class="search-drop">
-                      <!--##################
-
-                          Google Search.
-
-                        ################## -->       
-                    <form action="http://www.google.com" id="cse-search-box" target="_blank">
-                      <div>
-                        <input type="hidden" name="cx" value="partner-pub-6981626318170748:9252974045" />
-                        <input type="hidden" name="ie" value="UTF-8" />
-                        <div class="forminput">
-                        <input type="text" name="q" name="s" id="search"  class="formtip"  />
-                         </div>
-                                <!--<input type="text"  value="site search..." onfocus="if(this.value == 'site search...'){this.value = '';}" />-->
-                               
-                         <div class="formbutton"> <input type="submit" class="head-search" value="Search"  /></div>
-                      </div>
-                    </form>
-
-        <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
-                 
-        <!--##################
-
-          Uncomment to go with WordPress Native search.
-
-            ##################
-        -->
-        <!--<form class="search" action="<?php bloginfo('url'); ?>/" method="get" accept-charset="utf-8">
-        <input type="text" name="s" id="search"  class="formtip" value="site search..." onfocus="if(this.value == 'site search...'){this.value = '';}" />
-        <input type="submit" class="head-search" value="Search"  />
-        </form>
-                -->    
+                      <?php get_template_part('includes/google-search'); ?>
+                      <?php //get_template_part('includes/wordpress-search'); ?>
                  </li>
                </ul>
              </li>
            </ul>
         </div><!-- search open -->
 
-      <?php if(is_home()) { ?>
-            <h1 class="logo">
-            <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
-            </h1>
-        <?php } else { ?>
-            <div class="logo">
-            <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
-            </div>
-        <?php } ?>
+        <div class="mobile-search">
+          <?php get_template_part('includes/google-search'); ?>
+        </div><!-- mobile search -->
+
+      
 
       <nav id="site-navigation" class="main-navigation" role="navigation">
           <h3 class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></h3>
