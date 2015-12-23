@@ -5,14 +5,7 @@
 
 get_header(); ?>
 
-	
-
-
 <div id="page-left">
-
-
-
-
 
 <?php
 $current_cat = get_query_var('cat');
@@ -25,23 +18,20 @@ $wp_query->query(array(
 	'posts_per_page' => 10,
 ));
 if ($wp_query->have_posts()) : ?>
-<div id="container" class="blog-square-container">
-<?php
-while ($wp_query->have_posts()) : $wp_query->the_post();
+    <div id="container" class="blog-square-container">
+        
+        <?php
+        while ($wp_query->have_posts()) : $wp_query->the_post();
 
-    get_template_part('includes/blog-post');
+            get_template_part('includes/blog-post');
 
- endwhile; /*endif;*/  ?>
+         endwhile; /*endif;*/  ?>
 
-</div><!-- blog square container --> 
- 
- 
- 
-
-
-<div class="untamed-pagi">
-<?php pagi_posts_nav(); ?>
-</div>
+    </div><!-- blog square container --> 
+    
+    <div class="untamed-pagi">
+        <?php pagi_posts_nav(); ?>
+    </div>
 
 <?php endif; /*endif;*/ wp_reset_postdata(); ?>
 
