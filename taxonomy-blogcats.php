@@ -4,10 +4,6 @@
  */
 get_header(); ?>
 
-
-<?php get_sidebar(); ?>
-	
- 
 <div id="page-left">
 
  <?php 
@@ -39,19 +35,16 @@ if(have_posts()) : ?>
     get_template_part('includes/blog-post');
 
  endwhile; ?>
+
     <div class="untamed-pagi">
-    <?php untamed_pagi(); ?>
+    <?php pagi_posts_nav(); ?>
     </div>
+
 </div><!-- blog square container --> 
-<?php endif; wp_reset_postdata(); ?>
-
- 
-
-
-
-
-
-
+<?php endif; //wp_reset_postdata(); ?>
 
 </div><!-- page left -->
+
+<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
