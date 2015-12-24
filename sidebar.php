@@ -33,6 +33,28 @@ elseif ( 'filmmaking' == get_post_type() || is_page('how-to-filmmaking') ) {  //
 </div><!-- sideitem -->
 
 
+<?php
+	// $post = get_post(86);
+	// setup_postdata( $post );
+
+	// $googleScript = get_field('body_script');
+	// $enable = get_field('enable_ad');
+	
+	// if( $enable == 'Yes' ) :
+	// echo '<!-- right big -->';
+	// echo '<div class="ad">';
+	
+	// 	if( $googleScript != '' ) {
+	// 		echo $googleScript;
+	// 	}
+	
+	// echo '</div><!-- ad -->';
+	// endif; 
+
+	// wp_reset_postdata(); 
+?>
+
+
 <div class="sidebox-video-list">
 	<a href="<?php bloginfo('url'); ?>/science-videos-list/">View Science Vidoes</a>
 </div>
