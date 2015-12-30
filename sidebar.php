@@ -63,6 +63,74 @@ elseif ( 'filmmaking' == get_post_type() || is_page('how-to-filmmaking') ) {  //
 	<a href="<?php bloginfo('url'); ?>/world-biology/">Studying Biology?</a>
 </div>
 
+<div class="clear"></div>
+
+<?php 
+	
+	/*
+			Ad # 1
+	_______________________________________*/
+
+	$post = get_post(2502);
+	setup_postdata( $post );
+	$googleScript = get_field('body_script');
+	$enable = get_field('enable_ad');
+	
+	if( $enable == 'Yes' ) :
+	echo '<!-- AD #1 -->';
+	echo '<div class="ad">';
+	
+		if( $googleScript != '' ) {
+			echo $googleScript;
+		}
+	
+	echo '</div><!-- ad -->';
+	endif; // endif the ad is enabled
+	wp_reset_postdata();
+
+	/*
+			Ad # 2
+	_______________________________________*/
+	
+	$post = get_post(2503);
+	setup_postdata( $post );
+	$googleScript = get_field('body_script');
+	$enable = get_field('enable_ad');
+	
+	if( $enable == 'Yes' ) :
+	echo '<!-- AD #2 -->';
+	echo '<div class="ad">';
+	
+		if( $googleScript != '' ) {
+			echo $googleScript;
+		}
+	
+	echo '</div><!-- ad -->';
+	endif; // endif the ad is enabled
+	wp_reset_postdata();
+
+	/*
+			Ad # 3
+	_______________________________________*/
+	
+	$post = get_post(2504);
+	setup_postdata( $post );
+	$googleScript = get_field('body_script');
+	$enable = get_field('enable_ad');
+	
+	if( $enable == 'Yes' ) :
+	echo '<!-- AD #3 -->';
+	echo '<div class="ad">';
+	
+		if( $googleScript != '' ) {
+			echo $googleScript;
+		}
+	
+	echo '</div><!-- ad -->';
+	endif; // endif the ad is enabled
+	wp_reset_postdata();
+?>
+
 <?php // If a Side Box is Defined....
  if(get_field('sideboxes')): ?>
  	<?php while(has_sub_field('sideboxes')): ?>
