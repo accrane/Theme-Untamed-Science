@@ -72,7 +72,7 @@ elseif ( 'filmmaking' == get_post_type() || is_page('how-to-filmmaking') ) {  //
 	$title = $image['title'];
 	$alt = $image['alt'];
 	$caption = $image['caption'];
- 	$size = 'large';
+ 	$size = 'medium';
 	$thumb = $image['sizes'][ $size ];
 	$width = $image['sizes'][ $size . '-width' ];
 	$height = $image['sizes'][ $size . '-height' ];
