@@ -133,6 +133,39 @@ function js_custom_init()
   'taxonomies' => array('post_tag', 'biology') 
   ); 
   register_post_type('biology',$args);
+
+
+  /* Custom Post Type Biology */
+  $labels = array(
+  'name' => _x('Ads', 'post type general name'),
+    'singular_name' => _x('Ad', 'post type singular name'),
+    'add_new' => _x('Add New', 'Ad'),
+    'add_new_item' => __('Add New Ad'),
+    'edit_item' => __('Edit Ad'),
+    'new_item' => __('New Ad'),
+    'view_item' => __('View Ad'),
+    'search_items' => __('Search Ads'),
+    'not_found' =>  __('None found'),
+    'not_found_in_trash' => __('None found in Trash'), 
+    'parent_item_colon' => '',
+    'menu_name' => 'Ads'
+  );
+  $args = array(
+  'labels' => $labels,
+    'public' => true,
+    'publicly_queryable' => true,
+    'show_ui' => true, 
+    'show_in_menu' => true, 
+    'query_var' => true,
+    'rewrite' => true,
+    'capability_type' => 'post',
+    'has_archive' => true, 
+    'hierarchical' => true,
+    'menu_position' => 20,
+    'supports' => array('title'),
+  'taxonomies' => array() 
+  ); 
+  register_post_type('ad',$args);
     
 } // End Custom Post Types
 

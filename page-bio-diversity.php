@@ -3,7 +3,7 @@
 * Template Name: Biodiversity
 */
  get_header(); ?>
- <?php get_sidebar(); ?>
+
 
 
 
@@ -25,5 +25,5 @@
 <?php wp_reset_postdata(); ?>
 
 </div><!-- / page left -->
-
+ <?php get_sidebar(); ?>
 <?php get_footer(); ?>

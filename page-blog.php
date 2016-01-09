@@ -3,7 +3,7 @@
  * Template Name: Blog
  */
 
-get_header(); ?>
+get_header();  ?>
 
 <div id="page-left">
 

@@ -16,11 +16,8 @@
 	<div class="author-description">
 		
         
-       <!-- <h3 class="author-title"><?php //printf( __( 'Published by %s', 'twentythirteen' ), get_the_author() ); ?></h3>-->
-		
-        
-        <p class="author-bio">
-			<?php the_author_meta( 'description' ); ?>
+       <p class="author-bio">
+			   <?php //the_author_meta( 'description' ); ?>
         </p>
         
         

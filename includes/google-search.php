@@ -7,7 +7,7 @@
                          </div>
                                 <!--<input type="text"  value="site search..." onfocus="if(this.value == 'site search...'){this.value = '';}" />-->
                                
-                         <div class="formbutton"> <input type="submit" class="head-search" value="Search"  /></div>
+                         <div class="formbutton-header"> <input type="submit" class="head-search" value="Search"  /></div>
                       </div>
                     </form>
 

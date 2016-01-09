@@ -16,11 +16,13 @@
 	<div class="author-description">
 		
         
-        <h3 class="author-title">Written by <a href="<?php the_author_meta('user_url'); ?>"><?php echo get_the_author(); ?></a></h2>
+        <h3 class="author-title">
+          Written by <a href="<?php the_author_meta('user_url'); ?>"><?php echo get_the_author(); ?></a>
+        </h3>
 		
         
         <p class="author-bio">
-			<?php the_author_meta( 'description' ); ?>
+			   <?php the_author_meta( 'description' ); ?>
         </p>
         
         

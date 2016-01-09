@@ -5,7 +5,7 @@
 get_header(); ?>
 
 
-<?php get_sidebar(); ?>
+
 	
         
  <?php //if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>       
@@ -73,6 +73,11 @@ $current_term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'ta
  //echo $current_term->name*/
 ?>
 <h2 class="page-title">Species listed under <?php single_cat_title( $prefix = '', $display = true ); ?></h2>
+
+<div class="entry-content">
+<?php echo category_description($term_id); ?>
+</div>
+
 <?php
 $current_query = $wp_query->query_vars;
 
@@ -104,7 +109,7 @@ while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 <?php endwhile; /*endif;*/ wp_reset_postdata(); ?>
 
 <!--<div class="untamed-pagi">
-<?php untamed_pagi(); ?>
+<?php //untamed_pagi(); ?>
 </div>-->
 <?php
  /* if(is_tax('genustag')) {
@@ -132,6 +137,6 @@ while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
 		</div><!-- #page-left -->
 
-
+<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

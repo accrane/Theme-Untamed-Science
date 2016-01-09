@@ -5,6 +5,7 @@
   register_nav_menu( 'tree-of-life', __( 'Biodiversity Menu', 'us' ) );
   register_nav_menu( 'biology', __( 'Biology Menu', 'us' ) );
   register_nav_menu( 'footermenu', __( 'Footer Menu', 'us' ) );
+  register_nav_menu( 'othersites', __( 'Other Sites', 'us' ) );
   
   add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
 function special_nav_class($classes, $item){

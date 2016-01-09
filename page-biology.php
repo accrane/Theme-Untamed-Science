@@ -3,7 +3,7 @@
 * Template Name: Biology
 */
  get_header(); ?>
- <?php get_sidebar(); ?>
+
 
 
 
@@ -26,5 +26,5 @@
 
 
 </div><!-- / page left -->
-
+ <?php get_sidebar(); ?>
 <?php get_footer(); ?>

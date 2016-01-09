@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<?php get_sidebar(); ?>
+
 
 
 <div id="page-left">
@@ -42,5 +42,5 @@
 
 </div><!-- page left -->
 
-
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

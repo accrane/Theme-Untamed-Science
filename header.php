@@ -78,9 +78,7 @@ wp_head();
            </ul>
         </div><!-- search open -->
 
-        <div class="mobile-search">
-          <?php get_template_part('includes/google-search'); ?>
-        </div><!-- mobile search -->
+        
 
       
 

@@ -27,9 +27,8 @@
     
     
     
-    <div id="footer">
-
-    
+<div id="footer">
+  <div class="wrapper">
     <div class="footer-left">
       <h3>Company Pages</h3>
       <ul>
@@ -37,7 +36,7 @@
       </ul>
       <p class="copyright">Copyright &copy; <?php echo date('Y'); ?></p>
       <p class="copyright">All rights reserved.</p>
-    </div><!-- #footer -->
+    </div><!-- #footer left -->
     
     
     <div class="footer-mid-left">
@@ -48,21 +47,21 @@
     <input type="hidden" name="ie" value="UTF-8" />
     <div class="forminput">
     <input type="text" name="q" name="s" id="search"  class="formtip"  />
-     </div>
+     </div><!-- form imput -->
             <!--<input type="text"  value="site search..." onfocus="if(this.value == 'site search...'){this.value = '';}" />-->
            
      <div class="formbutton"> <input type="submit" class="head-search" value="Search"  /></div>
-  </div>
+  </div><!-- footer form -->
 </form>
 
 <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
-    </div><!-- #footer -->
+    </div><!-- #footermid left -->
     
     <div class="footer-mid-right">
     <!-- Begin MailChimp Signup Form -->
       <h3>Join our mailing list</h3>
       <?php get_template_part( '/includes/newsletter' ); ?>
-    </div><!-- #footer -->
+    </div><!-- #footer mid right -->
     
     <div class="footer-right">
      <h3>Follow Us on...</h3>
@@ -73,7 +72,7 @@
                 <li class="f-twitter"><a href="https://twitter.com/UntamedScience">Follow Us on Twitter</a></li>
                 <li class="f-youtube"><a href="http://www.youtube.com/user/UntamedScience">Watch us on YouTube</a></li>
             </ul>
-        </div>
+        </div><!-- f soc -->
         
     <div class="clear"></div>
 
@@ -81,10 +80,10 @@
         <ul>
             <?php wp_nav_menu( array( 'theme_location' => 'othersites' ) ); ?>
         </ul>
-    </div><!-- #footer -->
+    </div><!-- #footer right -->
     
 
-    
+    </div><!-- wrapper -->
     </div><!-- #footer -->
      </div><!-- #footer container -->
 

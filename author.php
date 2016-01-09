@@ -3,8 +3,10 @@
  * Template for Author
  */
 
-get_header(); ?>
-<?php get_sidebar(); ?>
+get_header(); 
+
+?>
+
 	
 
 
@@ -52,11 +54,7 @@ while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 <div class="blog-square">
 
 <div class="blog-square-readmore"><a href="<?php the_permalink(); ?>">Read More</a></div>
-<!--<div class="filed-away">Filed as:</div>-->
-<div class="blog-square-category">
-<?php //$custom_tax = get_the_term_list( $post->ID, 'filmmakingcats', '<li>', '', '</li>') ?>  
-<?php //echo $custom_tax ?>
-</div><!-- blog square category -->
+
 
         <div class="blog-featured-image">
         <a href="<?php the_permalink(); ?>">
@@ -112,11 +110,18 @@ while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 <div id="beta" class="blog-square-container"></div>
 
 
-<div class="untamed-pagi">
-<?php untamed_pagi(); ?>
-</div>
+  <div class="untamed-pagi">
+      <?php pagi_posts_nav(); ?>
+  </div>
 
 
 
 </div><!-- page left -->
-<?php get_footer(); ?>
+
+<?php 
+
+get_sidebar();
+
+get_footer(); 
+
+?>

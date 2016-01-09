@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<?php 
+
+/**
+* Template Name: Sitemap
+*/
+
+get_header(); ?>
 
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -14,7 +20,11 @@
 
 </h2>
      <div class="content-entry">
- <?php the_content(); ?>
+ <?php the_content(); 
+
+wp_nav_menu( array( 'theme_location' => 'sitemap' ) );
+ ?>
+
  </div><!-- content - entry -->
  </div><!-- / page content -->
 
