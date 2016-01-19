@@ -28,7 +28,7 @@ elseif ( 'filmmaking' == get_post_type() || is_page('how-to-filmmaking') ) {  //
 
 
 <div class="sideitem orange">
-	<h3>Science Newsletter: </h3>
+	<h3>Untamed Science Updates</h3>
 	<?php get_template_part( 'includes/newsletter' ); ?>
 </div><!-- sideitem -->
 

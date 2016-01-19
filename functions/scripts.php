@@ -57,6 +57,12 @@
 			get_bloginfo('template_directory') . '/js/jquery.jcarousel.js',
 			array('jquery') );
 		wp_enqueue_script('jcarousel');
+
+		wp_register_script(
+			'wipe',
+			get_bloginfo('template_directory') . '/js/wipe.js',
+			array('jquery') );
+		wp_enqueue_script('wipe');
 		
 	}
 }

@@ -76,15 +76,16 @@ h3.page-title {
 -----------------------------------------------*/
 /* Logo */
 .logo , h1.logo {
-	width: 288px;
-	height: 50px;
-	background-image: url(images/logo.png);	
+	width: 250px;
+	height: 25px;
+	background-image: url(images/logo-new.png);	
+	background-size: cover;
 	z-index: 1;
 	margin: 20px auto;
 }
 .logo a, h1.logo a {
-	width: 288px;
-	height: 50px;
+	width: 250px;
+	height: 25px;
 	display: block;
 	text-indent: -9000px;
 }
@@ -149,7 +150,8 @@ input.head-search {
 	color: #FFF;
 	background-color: #999;
 	padding: 10px;	
-	border:none		
+	border:none;
+	width: 100%;	
 }
 input.formtip {
 	padding: 10px 3px;
@@ -164,10 +166,10 @@ input.formtip {
 .forminput-side {
 	width: 55%;
 	float:left;
-	margin-right: 5px;	
+	/*margin-right: 5px;*/	
 }
 .formbutton {
-	width: 50px;
+	width:auto;
 	float:right;	
 }
 .formbutton-header {
@@ -175,7 +177,7 @@ input.formtip {
 	float: left;
 }
 input#search.formtip {
-	width:auto;	
+	width:100%;	
 }
 .mobile-search {
 	width: auto;
@@ -918,6 +920,7 @@ h3.author-title {
 	font-weight: 300;
 	letter-spacing: 2px;
 	line-height: 23px;
+	color: #fff;
 }
 .green {
 	background-color: #00845D;
@@ -1413,9 +1416,9 @@ p.comment-form-comment {
 	
 	.logo , h1.logo {
 		width: 288px;
-		height: 50px;
+		height: 29px;
 		float: left;
-		margin: 0;
+		margin: 10px 0 0;
 	}
 	#header-social {
 		width: 135px;
@@ -1908,11 +1911,11 @@ p.comment-form-comment {
 	}
 
 	.formbutton {
-		width: 80px;
+		width: auto;
 		float:left;	
 	}
 	input#search.formtip {
-		width: 150px;	
+		/*width: 150px;*/	
 	}
 	/*  ################################################################################################
 

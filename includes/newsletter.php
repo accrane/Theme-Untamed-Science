@@ -6,7 +6,7 @@
 	<!--<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL">-->
     
     <div class="forminput-side">
-    <input type="email" name="EMAIL" id="search"  class="formtip" value="Enter your email address..." onfocus="if(this.value == 'Enter your email address...'){this.value = '';}" />
+    <input type="email" name="EMAIL" id="search"  class="formtip" value="Get Updates from U.S." onfocus="if(this.value == 'Get Updates from U.S.'){this.value = '';}" />
 </div>
 <div class="formbutton"> <input type="submit" class="head-search" value="Subscribe"  /></div>
 	<div id="mce-responses" class="clear">
