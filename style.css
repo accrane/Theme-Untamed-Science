@@ -433,23 +433,24 @@ input#search.formtip {
 	color: #F2F2F2;
 }
 .thelionking {
-	width: 240px;
-	margin-bottom: 10px;
+	width: 100%;
+	margin-bottom: 5%;
 	position: relative;
 	float:left;	
 }
+..thelionking img {width: 100%;}
 .class-row {
-	width: 240px;
+	width:100%;
 	position: relative;
 	float:left;	
 }
 .left-classif {
-	width: 80px;
+	width: 40%;
 	float:left;	
 }
 .right-classif {
-	width: 160px;
-	float:left;	
+	width: 55%;
+	float:right;	
 }
 .right-classif a {
 	text-decoration: none;
@@ -765,9 +766,9 @@ padding: 10px;
 	position: relative;
 	float:left;
 	max-width: 670px;
-	padding: 0px 20px;
+	padding: 5%;
 	text-align: left; /* gallery & video post formats */
-	width: 100%;
+	width: 90%;
 	background-color: #F1F1F1;
 	border-top-width: 4px;
 	border-top-style: solid;
@@ -787,7 +788,6 @@ p.author-bio  {
 	color: #D56431;
 	background-color: #FFF;
 	padding: 5%;
-	margin-left: -15px;
 }
 .author-share {
 	width: 90%;
@@ -797,7 +797,6 @@ p.author-bio  {
 	color: #D56431;
 	background-color: #FFF;
 	padding: 5%;
-	margin-left: -15px;
 }
 .author-links {
 	width: 90%;
@@ -865,7 +864,6 @@ h3.author-title {
 
 .read-all-author  {
 	width: 100%;
-	margin-left: -15px;
 }
 .read-all-author a {
 	width: 90%;
@@ -976,8 +974,8 @@ h3.author-title {
 	background-position: -300px -116px;
 }
 .commonname {
-	width: 240px;
-	padding: 10px;
+	width: 90%;
+	padding: 5%;
 	background-color:#FFF;
 	color: #333;
 }
