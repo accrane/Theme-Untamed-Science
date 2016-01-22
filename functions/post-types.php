@@ -333,8 +333,7 @@ function build_taxonomies() {
   
 // For showing on Front Page  
 register_taxonomy( 'front_page',
-      array( 
-    'blog','biodiversity','biology', 'filmmaking' ), // List Custom Post Types to show
+      array( 'blog','biodiversity','biology', 'filmmaking', 'page' ), // List Custom Post Types to show
       array( 
     'hierarchical' => true,
       'label' => 'Show on Front Page?',               

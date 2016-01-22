@@ -11,7 +11,7 @@
 		   
            $args = array(
 		   
-            'post_type' => array('blog','biodiversity', 'filmmaking', 'biology'), //You list of Custom Post Types
+            'post_type' => array('blog','biodiversity', 'filmmaking', 'biology', 'page'), //You list of Custom Post Types
             'posts_per_page' => '100', // # of posts to show
 			'tax_query' => array(  //Custom Taxonomy "front_page"
 				array(       // array within an array
