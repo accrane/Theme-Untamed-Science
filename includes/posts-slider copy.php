@@ -1,14 +1,30 @@
-<!-- new from options -->
+
 	<div id="front-page-rotation">
    		<div id="flexslider" class="flexslider">
       			<ul id="mycarousel" class="jcarousel-skin-tango">
 
-              <?php $posts = get_field('posts_to_show_on_slider', 'option');
 
-                if( $posts ): ?>
-
-              <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
-              <?php setup_postdata($post); ?>
+ <?php
+		   
+		   /* Custom Query to pull all posts with the Front Page Category Custom Taxonomy
+		      from 4 different Custom Post Types that are listed in the Array Below */
+		   
+           $args = array(
+		   
+            'post_type' => array('blog','biodiversity', 'filmmaking', 'biology', 'page'), //You list of Custom Post Types
+            'posts_per_page' => '100', // # of posts to show
+			'tax_query' => array(  //Custom Taxonomy "front_page"
+				array(       // array within an array
+					'taxonomy' => 'front_page', // Name when registering CT
+					'field' => 'slug',
+					'terms' => 'front-page' // slug created by WP when you make your entry
+				)
+			)
+                
+            );
+            $query = new WP_Query( $args );  // Query all of your arguments from above
+           ?>
+           <?php if (have_posts()) : while( $query->have_posts() ) : $query->the_post(); // the loop ?>
            
            <li class="hideitemonload">
            		<?php $post_type = get_post_type( get_the_ID() ); // Get the post type so you can style your div according to the post type ?>
@@ -36,9 +52,7 @@
                     </div><!-- homepage thumb --> 
               
             </li>
-            <?php  endforeach;  ?>
-            <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-            <?php endif; ?>
+            <?php  endwhile; endif; wp_reset_postdata();  // close loop ?>
              <!-- Rewind and Reset -->
 				<?php  //wp_reset_query(); // Reset Query  ?> 
                 <?php  //rewind_posts(); ?>
