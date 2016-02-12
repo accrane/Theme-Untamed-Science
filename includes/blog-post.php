@@ -38,7 +38,7 @@ if( 'blog' == get_post_type() ) {
 			<?php
             //  Display the featured image. Must be inside a loop.
             if ( has_post_thumbnail() ) {
-                the_post_thumbnail('full');
+                the_post_thumbnail();
             }
             // If you do not have a Featured Image, show a thumbnail stored in the themes images folder.
             else {
