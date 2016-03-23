@@ -108,10 +108,10 @@ function bm_dont_display_it($content) {
 add_filter('wp_list_categories','bm_dont_display_it');
 
 
-function custom_post_author_archive( &$query )
+function custom_post_author_archive( $query )
 {
     if ( $query->is_author )
-        $query->set( 'post_type', array( 'filmmaking', 'biology', 'blog' ));
+        $query->set( 'post_type', array( 'filmmaking', 'biology', 'blog', 'biodiversity' ));
     remove_action( 'pre_get_posts', 'custom_post_author_archive' ); // run once!
 }
 add_action( 'pre_get_posts', 'custom_post_author_archive' );
@@ -142,3 +142,13 @@ function is_tree($pid) {      // $pid = The ID of the page we're looking for pag
   else 
                return false;  // we're elsewhere
 };
+/* Add CPTs to author archives */
+
+
+
+// function wpse_11210_set_wiki_for_author( $query ) {
+//     if ( $query->is_main_query() && $query->is_author() )
+//         $query->set( 'post_type', array('biodiversity', 'post') );
+// }
+
+// add_action( 'pre_get_posts', 'wpse_11210_set_wiki_for_author' );
